@@ -1,0 +1,38 @@
+svg {
+  transform: scale(2);
+  backface-visibility: hidden;
+  @media screen and (min-width: 768px) {
+    transform: scale(3);
+    position: relative;
+  
+  }
+}
+g {
+  box-shadow: 0 0 10px black;
+  height: 2em;
+}
+
+#fox-g {
+  path,
+  polygon {
+    transform-origin: 5em center;
+  }
+}
+
+#name-g {
+  path {
+    height: 2em;
+    display: block;
+   
+    transform-origin: 25% 75%;
+    &:after {
+      content: '';
+      position: relative;
+      height: 3em;
+      width: 100%;
+      background: black;
+      border-radius: 100%;
+    }
+  }
+}
+
